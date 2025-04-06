@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GEO Dataset Clusters Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .graph-container {
+            height: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .instructions {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GEO Dataset Clusters Visualization</h1>
+        
+        {% if graph_html %}
+            <div class="graph-container">
+                {{ graph_html | safe }}
+            </div>
+        {% else %}
+            <div class="instructions">
+                <h2>Visualization Not Available</h2>
+                <p>To generate the GEO dataset clusters visualization, please return to the home page and either manually submit PMIDs or upload a .txt file containing the list of PMIDs.</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
