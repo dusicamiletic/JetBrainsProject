@@ -80,7 +80,7 @@ The application performs the following analysis:
 
 1. **Input PMIDs**:
    - **Manual Entry**: Enter PMIDs directly in the provided text field
-   - **File Upload**: Upload a text file containing PMIDs (one PMID per line)
+   - **File Upload**: Upload a text file containing PMIDs (one PMID per line, without commas)
 
 2. **Processing**:
    - The application will:
