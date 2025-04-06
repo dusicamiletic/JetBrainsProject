@@ -8,7 +8,7 @@ The application performs the following analysis:
 
 1. **Data Retrieval**:
    - Uses NCBI's e-utils API to fetch GEO dataset IDs associated with provided PMIDs
-   - Example API call: `eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&db=gds&linkname=pubmed_gds&id={PMID}&retmode=xml`
+   - Example API call: `eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&db=gds&linkname=pubmed_gds&id=25404168&retmode=xml`
    - Implements caching mechanism to store API responses:
      - Once an API call is made for a specific GEO ID, the response is stored in cache
      - Subsequent requests for the same GEO ID will use cached data instead of making new API calls
