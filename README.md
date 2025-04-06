@@ -81,7 +81,6 @@ The application performs the following analysis:
 1. **Input PMIDs**:
    - **Manual Entry**: Enter PMIDs directly in the provided text field
    - **File Upload**: Upload a text file containing PMIDs (one PMID per line)
-   - **Send via POST request**: Use the provided test_visualize_request.py script as an example to send PMIDs through a POST request in JSON format.
 
 2. **Processing**:
    - The application will:
